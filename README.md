@@ -1,7 +1,7 @@
 # 부트스트랩을 통한 포트폴리오 제작 과정을 기록하기 위해 만들어진 Repository 입니다. 
 :adult: 
 > ### 작업소개 :smile_cat: 
-- Bootstrap free templete을 활용하여 나만의 디자인 작업
+- Bootstrap free templete을 활용하여 나만의 포트폴리오로 만들기 위한 작업
 
 > ### UPDATE :astronaut:
 - point color 설정 및 전체 색상 스타일 변경
