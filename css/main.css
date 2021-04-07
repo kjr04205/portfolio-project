@@ -2,3 +2,63 @@
 .mainBg {background-color:#A682FF !important;}
 
 .portfolio .portfolio-item .portfolio-item-caption:hover{background-color:#A682FF !important;}
+
+.ml6 {
+    position: relative;
+    font-weight: 900;
+    font-size: 3.3em;
+}
+  
+.ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+}
+  
+.ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.typing-animation div{
+    display:inline-block !important;
+    width:100%;
+}
+.typing-animation div p{
+    letter-spacing:-0.9px;
+    line-height: 1.8;
+    margin-top:0.5em;
+}
+
+.line-1{
+    position: relative;
+    margin: 0 auto;
+    font-size: 180%;
+    text-align: center;
+    word-break: break-all;
+    overflow:hidden;
+    white-space:nowrap;
+}
+
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  0%{width: 0;}
+  100%{width: 100%;}
+}
+
+@media (max-width: 992px){
+    .ml6 .letter{font-size:2.5rem;}
+    .line-1{font-size:150%;}
+
+    @keyframes typewriter{
+        0%{width: 0;}
+        80%{white-space:nowrap;}
+        100%{width: 100%; white-space:initial;}
+    }
+}

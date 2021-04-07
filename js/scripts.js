@@ -56,4 +56,19 @@
     });
   
   })(jQuery);
-  
+
+/* 텍스트 애니메이션 스크립트 */
+var textWrapper = document.querySelector('.ml6 .letters');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: 1})
+.add({
+  targets: '.ml6 .letter',
+  translateY: ["2.5em", 0],
+  translateZ: 0,
+  duration: 1500,
+  opacity:1,
+  delay: (el, i) => 50 * i
+});
+
+
