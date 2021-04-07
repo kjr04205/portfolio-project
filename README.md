@@ -6,3 +6,4 @@
 > ### UPDATE :astronaut:
 - point color 설정 및 전체 색상 스타일 변경
 - git 환경 설정(branch 생성 및 remote 연결 후 commit, push)
+- text-animation을 통해 반응형 메인페이지 작업
