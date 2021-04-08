@@ -13,3 +13,4 @@
 - photoshop 작업을 통해 이미지 비율 작업, 컨텐츠 이미지 편집 후 홈페이지 실제 적용완료
 - css animation과 가상선택자를 활용한 % 수치 구현
 # - 전체 컨텐츠 반응형 웹 작업
+https://user-images.githubusercontent.com/63985698/114037594-1647a600-98bc-11eb-8e34-d529280adbb3.png
