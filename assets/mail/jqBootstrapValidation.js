@@ -1,12 +1,3 @@
-/* jqBootstrapValidation
- * A plugin for automating validation on Twitter Bootstrap formatted forms.
- *
- * v1.3.6
- *
- * License: MIT <http://opensource.org/licenses/mit-license.php> - see LICENSE file
- *
- * http://ReactiveRaven.github.com/jqBootstrapValidation/
- */
 
 (function( $ ){
 
@@ -15,17 +6,17 @@
 	var defaults = {
 		options: {
 			prependExistingHelpBlock: false,
-			sniffHtml: true, // sniff for 'required', 'maxlength', etc
-			preventSubmit: true, // stop the form submit event from firing if validation fails
-			submitError: false, // function called if there is an error when trying to submit
-			submitSuccess: false, // function called just before a successful submit event is sent to the server
-            semanticallyStrict: false, // set to true to tidy up generated HTML output
+			sniffHtml: true, 
+			preventSubmit: true, 
+			submitError: false, 
+			submitSuccess: false, 
+            semanticallyStrict: false, 
 			autoAdd: {
 				helpBlocks: true
 			},
             filter: function () {
-                // return $(this).is(":visible"); // only validate elements you can see
-                return true; // validate everything
+                
+                return true;
             }
 		},
     methods: {
@@ -80,31 +71,23 @@
 
         return this.each(function(){
 
-          // Get references to everything we're interested in
+          
           var $this = $(this),
             $controlGroup = $this.parents(".control-group").first(),
             $helpBlock = $controlGroup.find(".help-block").first(),
             $form = $this.parents("form").first(),
             validatorNames = [];
 
-          // create message container if not exists
           if (!$helpBlock.length && settings.options.autoAdd && settings.options.autoAdd.helpBlocks) {
               $helpBlock = $('<div class="help-block" />');
               $controlGroup.find('.controls').append($helpBlock);
 							createdElements.push($helpBlock[0]);
           }
 
-          // =============================================================
-          //                                     SNIFF HTML FOR VALIDATORS
-          // =============================================================
-
-          // *snort sniff snuffle*
 
           if (settings.options.sniffHtml) {
             var message = "";
-            // ---------------------------------------------------------
-            //                                                   PATTERN
-            // ---------------------------------------------------------
+            
             if ($this.attr("pattern") !== undefined) {
               message = "Not in the expected format<!-- data-validation-pattern-message to override -->";
               if ($this.data("validationPatternMessage")) {
@@ -113,9 +96,7 @@
               $this.data("validationPatternMessage", message);
               $this.data("validationPatternRegex", $this.attr("pattern"));
             }
-            // ---------------------------------------------------------
-            //                                                       MAX
-            // ---------------------------------------------------------
+            
             if ($this.attr("max") !== undefined || $this.attr("aria-valuemax") !== undefined) {
               var max = ($this.attr("max") !== undefined ? $this.attr("max") : $this.attr("aria-valuemax"));
               message = "Too high: Maximum of '" + max + "'<!-- data-validation-max-message to override -->";
@@ -125,9 +106,7 @@
               $this.data("validationMaxMessage", message);
               $this.data("validationMaxMax", max);
             }
-            // ---------------------------------------------------------
-            //                                                       MIN
-            // ---------------------------------------------------------
+            
             if ($this.attr("min") !== undefined || $this.attr("aria-valuemin") !== undefined) {
               var min = ($this.attr("min") !== undefined ? $this.attr("min") : $this.attr("aria-valuemin"));
               message = "Too low: Minimum of '" + min + "'<!-- data-validation-min-message to override -->";
@@ -137,9 +116,7 @@
               $this.data("validationMinMessage", message);
               $this.data("validationMinMin", min);
             }
-            // ---------------------------------------------------------
-            //                                                 MAXLENGTH
-            // ---------------------------------------------------------
+            
             if ($this.attr("maxlength") !== undefined) {
               message = "Too long: Maximum of '" + $this.attr("maxlength") + "' characters<!-- data-validation-maxlength-message to override -->";
               if ($this.data("validationMaxlengthMessage")) {
@@ -148,9 +125,7 @@
               $this.data("validationMaxlengthMessage", message);
               $this.data("validationMaxlengthMaxlength", $this.attr("maxlength"));
             }
-            // ---------------------------------------------------------
-            //                                                 MINLENGTH
-            // ---------------------------------------------------------
+            
             if ($this.attr("minlength") !== undefined) {
               message = "Too short: Minimum of '" + $this.attr("minlength") + "' characters<!-- data-validation-minlength-message to override -->";
               if ($this.data("validationMinlengthMessage")) {
@@ -159,9 +134,7 @@
               $this.data("validationMinlengthMessage", message);
               $this.data("validationMinlengthMinlength", $this.attr("minlength"));
             }
-            // ---------------------------------------------------------
-            //                                                  REQUIRED
-            // ---------------------------------------------------------
+            
             if ($this.attr("required") !== undefined || $this.attr("aria-required") !== undefined) {
               message = settings.builtInValidators.required.message;
               if ($this.data("validationRequiredMessage")) {
@@ -169,9 +142,7 @@
               }
               $this.data("validationRequiredMessage", message);
             }
-            // ---------------------------------------------------------
-            //                                                    NUMBER
-            // ---------------------------------------------------------
+            
             if ($this.attr("type") !== undefined && $this.attr("type").toLowerCase() === "number") {
               message = settings.builtInValidators.number.message;
               if ($this.data("validationNumberMessage")) {
@@ -179,9 +150,7 @@
               }
               $this.data("validationNumberMessage", message);
             }
-            // ---------------------------------------------------------
-            //                                                     EMAIL
-            // ---------------------------------------------------------
+            
             if ($this.attr("type") !== undefined && $this.attr("type").toLowerCase() === "email") {
               message = "Not a valid email address<!-- data-validator-validemail-message to override -->";
               if ($this.data("validationValidemailMessage")) {
@@ -191,9 +160,7 @@
               }
               $this.data("validationValidemailMessage", message);
             }
-            // ---------------------------------------------------------
-            //                                                MINCHECKED
-            // ---------------------------------------------------------
+            
             if ($this.attr("minchecked") !== undefined) {
               message = "Not enough options checked; Minimum of '" + $this.attr("minchecked") + "' required<!-- data-validation-minchecked-message to override -->";
               if ($this.data("validationMincheckedMessage")) {
@@ -202,9 +169,7 @@
               $this.data("validationMincheckedMessage", message);
               $this.data("validationMincheckedMinchecked", $this.attr("minchecked"));
             }
-            // ---------------------------------------------------------
-            //                                                MAXCHECKED
-            // ---------------------------------------------------------
+            
             if ($this.attr("maxchecked") !== undefined) {
               message = "Too many options checked; Maximum of '" + $this.attr("maxchecked") + "' required<!-- data-validation-maxchecked-message to override -->";
               if ($this.data("validationMaxcheckedMessage")) {
@@ -215,16 +180,10 @@
             }
           }
 
-          // =============================================================
-          //                                       COLLECT VALIDATOR NAMES
-          // =============================================================
-
-          // Get named validators
           if ($this.data("validation") !== undefined) {
             validatorNames = $this.data("validation").split(",");
           }
 
-          // Get extra ones defined on the element's data attributes
           $.each($this.data(), function (i, el) {
             var parts = i.replace(/([A-Z])/g, ",$1").split(",");
             if (parts[0] === "validation" && parts[1]) {
@@ -232,16 +191,12 @@
             }
           });
 
-          // =============================================================
-          //                                     NORMALISE VALIDATOR NAMES
-          // =============================================================
-
           var validatorNamesToInspect = validatorNames;
           var newValidatorNamesToInspect = [];
 
-          do // repeatedly expand 'shortcut' validators into their real validators
+          do 
           {
-            // Uppercase only the first letter of each name
+            
             $.each(validatorNames, function (i, el) {
               validatorNames[i] = formatValidatorName(el);
             });

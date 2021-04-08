@@ -10101,7 +10101,7 @@ h3 {
   }
 }
 .masthead {
-  padding-top: calc(6rem + 74px);
+  padding-top: calc(6rem + 54px);
   padding-bottom: 6rem;
 }
 .masthead .masthead-heading {
@@ -10117,8 +10117,8 @@ h3 {
 
 @media (min-width: 992px) {
   .masthead {
-    padding-top: calc(6rem + 104px);
-    padding-bottom: 6rem;
+    padding-top: calc(9rem + 100px);
+    padding-bottom: 9rem;
   }
   .masthead .masthead-heading {
     font-size: 3rem;
@@ -10155,6 +10155,7 @@ h3 {
   font-size: 2.25rem;
   line-height: 2rem;
 }
+
 @media (min-width: 992px) {
   .portfolio-modal .portfolio-modal-title {
     font-size: 3rem;

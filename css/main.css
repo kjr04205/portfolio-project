@@ -1,3 +1,4 @@
+a.active, a.hover, a:visited, a:link{text-decoration: none;}
 .navBg {background-color:#344055 !important;}
 .mainBg {background-color:#A682FF !important;}
 
@@ -47,18 +48,216 @@
   animation: typewriter 4s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
 }
+
+.portfolio-modal .portfolio-modal-title{
+    font-size:2.25rem;
+    line-height:3rem;
+    margin-top:1rem;
+}
+
+.year_wrap{
+    width:100%;
+    margin-bottom:1rem;
+}
+.year_wrap div{
+    display:inline-block;
+    box-sizing:border-box;
+    cursor:pointer;
+}
+.year_wrap div p{
+    font-size:1.7rem;
+}
+.year_wrap div.year_wrap_first{
+    margin-right:1rem;
+}
+.cursorPointer{
+    color:#A682FF;
+}
+.portfolio-modal-title{
+    margin-bottom:2rem !important;
+}
+.icon__wrap > div{
+    margin-left:1.5rem;
+    display:inline-block;
+}
+.icon__wrap img{
+    max-width:100px;
+    height:auto;
+    width:100%;
+    display:inline-block;
+}
+
+.google_map{
+    position:relative;
+    margin:0 auto;
+    width:100%;
+    max-width:1200px;
+}
+.google_map > div{
+    padding-bottom:56.25%;
+    width:100%;
+}
+.google_map > div iframe{
+    position:absolute;
+    z-index:1;
+    top:0;
+    left:0;
+    width: 100% !important;
+    height: 100% !important;
+}
+.google_map_title{
+    margin-bottom:2.5rem;
+}
+.google_map_content{
+    margin-bottom:5rem;
+}
+[data-trigger]{
+    opacity:0;
+    position:relative;
+    top:50px;
+    transition:1.5s ease-out;
+}
+[data-trigger].visible{
+    opacity:1;
+    top:0;
+}
+.exception__svg svg{
+    vertical-align: bottom;
+    width:27px;
+    height:27px;
+}
+.skill__wrap{
+    margin:0 auto;
+    width:80%; 
+    max-width:600px; 
+    height:40px; 
+    position:relative;
+    margin-top:3rem;
+}
+.skill__wrap p{
+    position:relative;
+    width: 100%;
+    height: 40px;
+    background:#fff;
+}
+.skill__wrap span{
+    font-size:1.5rem;
+}
+[data-trigger].visible .skill__wrap__01 p::after{
+    position:absolute;
+    content:"";
+    width:90%;
+    height:40px;
+    transition:3s ease-in-out;
+    background: #344055;
+    animation:skill90 1.5s ease-out;
+}
+[data-trigger].visible .skill__wrap__02 p::after{
+    position:absolute;
+    content:"";
+    width:90%;
+    height:40px;
+    transition:3s ease-in-out;
+    background: #344055;
+    animation:skill90 1.5s ease-out;
+    
+}
+[data-trigger].visible .skill__wrap__03 p::after{
+    position:absolute;
+    content:"";
+    width:60%;
+    height:40px;
+    transition:3s ease-in-out;
+    background: #344055;
+    animation:skill60 1.5s ease-out;
+}
+[data-trigger].visible .skill__wrap__04 p::after{
+    position:absolute;
+    content:"";
+    width:80%;
+    height:40px;
+    transition:3s ease-in-out;
+    background: #344055;
+    animation:skill80 1.5s ease-out;
+}
+[data-trigger].visible .skill__wrap__05 p::after{
+    position:absolute;
+    content:"";
+    width:90%;
+    height:40px;
+    transition:3s ease-in-out;
+    background: #344055;
+    animation:skill90 1.5s ease-out;
+}
+[data-trigger].visible .skill__wrap__06 p::after{
+    position:absolute;
+    content:"";
+    width:30%;
+    height:40px;
+    transition:3s ease-in-out;
+    background: #344055;
+    animation:skill30 1.5s ease-out;
+}
+
+@keyframes skill90{
+    0%{width: 0;}
+    100%{width:90%;}
+}
+@keyframes skill80{
+    0%{width: 0;}
+    100%{width:80%;}
+}
+@keyframes skill60{
+    0%{width: 0;}
+    100%{width:60%;}
+}
+@keyframes skill30{
+    0%{width: 0;}
+    100%{width:30%;}
+}
+
 @keyframes typewriter{
   0%{width: 0;}
   100%{width: 100%;}
 }
 
 @media (max-width: 992px){
-    .ml6 .letter{font-size:2.5rem;}
+    .ml6 .letter{font-size:2.4rem;}
     .line-1{font-size:150%;}
+
+    .icon__wrap img{
+        max-width:80px;
+        height:auto;
+        width:100%;
+        display:inline-block;
+        margin-top:1.5rem;
+    }
 
     @keyframes typewriter{
         0%{width: 0;}
-        80%{white-space:nowrap;}
+        60%{white-space:nowrap;}
         100%{width: 100%; white-space:initial;}
     }
+
+    
+}
+@media (max-width: 770px){
+    
+    .icon__wrap img{
+        max-width:100px;
+        height:auto;
+        width:100%;
+        display:inline-block;
+        margin-top:1.5rem;
+    }    
+}
+@media (max-width: 500px){
+    
+    .icon__wrap img{
+        max-width:70px;
+        height:auto;
+        width:100%;
+        display:inline-block;
+        margin-top:1.5rem;
+    }    
 }

@@ -5,10 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
+        <meta property="og:title" content="HYOIN's PORTFOLIO" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://hyoin.site" />
+        <meta property="og:image" content="https://avatars.githubusercontent.com/u/63985698?v=4" />
+        <meta property="og:description" content="Personal website" />
+
         <title>AN HYO IN</title>
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
         <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.5/ScrollTrigger.min.js" integrity="sha512-m/n857VfrPYUcRvzCfqfrC9aMT06TQA2V0DcX/Ovovrhswa3038FfYmHlB0l/ZMukVyKWmiwZI4Pnnd7v3FwFQ==" crossorigin="anonymous"></script>
 
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
@@ -27,7 +34,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">SKILL</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">Contact</a></li>
                     </ul>
                 </div>
@@ -39,7 +46,7 @@
 
                 <h1 class="ml6">
                     <span class="text-wrapper">
-                      <span class="letters">사용자를 먼저 생각하는 개발자가 되겠습니다.</span>
+                      <span class="letters">사용자를 먼저 생각하는 작업자가 되겠습니다.</span>
                     </span>
                 </h1>
 
@@ -50,15 +57,15 @@
                 </div>
                 
                 <div class="typing-animation">
-                    <div><p class="line-1 anim-typewriter">새로운 도전을 즐기는 팀원이 필요할 때</p></div>
-                    <div><p class="line-1 anim-typewriter">긍정적인 자세로 팀 분위기를 상기시켜줄 팀원이 필요할 때</p></div>
-                    <div><p class="line-1 anim-typewriter">책임감을 가지고 함께 일할 때 협업을 통해 시너지를 주는 팀원이 필요할 때</p></div>
+                    <div><p class="line-1 anim-typewriter">새로운 도전을 즐기는<br>팀원이 필요할 때</p></div>
+                    <div><p class="line-1 anim-typewriter">긍정적인 자세로 팀 분위기를 상기시켜줄<br>팀원이 필요할 때</p></div>
+                    <div><p class="line-1 anim-typewriter">책임감을 가지고 협업을 통해 시너지를 발휘할<br>팀원이 필요할 때</p></div>
                 </div>
                 
             </div>
         </header>
 
-        <section class="page-section portfolio" id="portfolio">
+        <section data-trigger class="page-section portfolio" id="portfolio">
             <div class="container">
                 <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
                 <div class="divider-custom">
@@ -66,15 +73,18 @@
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-
-                <div class="row justify-content-center">
+                <div class="year_wrap text-center">
+                    <div class="year_wrap_first cursorPointer"><p>2020</p></div>
+                    <div class="year_wrap_second"><p>2021</p></div>
+                </div>
+                <div class="row justify-content-center portfolio_first_box">
                     <!-- Portfolio Item 1-->
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="" />
+                            <img class="img-fluid" src="assets/img/portfolio/dgproject.jpg" alt="우리둥지대구 인트로페이지 이미지" />
                         </div>
                     </div>
                     <!-- Portfolio Item 2-->
@@ -83,7 +93,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="" />
+                            <img class="img-fluid" src="assets/img/portfolio/KMU.jpg" alt="계명대 창업지원단 이미지" />
                         </div>
                     </div>
                     <!-- Portfolio Item 3-->
@@ -92,7 +102,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="" />
+                            <img class="img-fluid" src="assets/img/portfolio/korea-appraisal.jpg" alt="한국감정원 이미지" />
                         </div>
                     </div>
                     <!-- Portfolio Item 4-->
@@ -101,7 +111,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/game.png" alt="" />
+                            <img class="img-fluid" src="assets/img/portfolio/blockchain.jpg" alt="대구광역시 블록체인플랫폼 이미지" />
                         </div>
                     </div>
                     <!-- Portfolio Item 5-->
@@ -110,7 +120,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/safe.png" alt="" />
+                            <img class="img-fluid" src="assets/img/portfolio/kiria.jpg" alt="한국로봇산업진흥원 이미지" />
                         </div>
                     </div>
                     <!-- Portfolio Item 6-->
@@ -119,17 +129,52 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/submarine.png" alt="" />
+                            <img class="img-fluid" src="assets/img/portfolio/media.jpg" alt="메디시티대구 이미지" />
                         </div>
                     </div>
                 </div>
+
+                <div class="row justify-content-center portfolio_second_box" style="display:none;">
+                    <!-- Portfolio Item 7-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal7">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/octobooks.jpg" alt="옥토북스 이미지" />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 8-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal8">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/camtobe.jpg" alt="캠투비 이미지" />
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <!-- About Section Button-->
+            <div class="text-center mt-4">
+                <a class="mt-4 btn btn-xl btn-outline-dark" href="assets/work.xlsx" download>
+                    <i class="fas fa-download mr-2"></i>
+                    경력기술서
+                </a>
+                <a class="exception__svg mt-4 btn btn-xl btn-outline-dark" href="https://github.com/kjr04205">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                      </svg>
+                      &nbsp;Github
+                </a>
             </div>
         </section>
         <!-- About Section-->
         <section class="page-section bg-primary text-white mb-0 mainBg"  id="about">
-            <div class="container">
+            <div data-trigger class="container">
                 <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <h2 class="page-section-heading text-center text-uppercase text-white">SKILL</h2>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
@@ -137,16 +182,77 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ml-auto"><p class="lead">준비중입니다.</p></div>
-                    <div class="col-lg-4 mr-auto"><p class="lead"></p></div>
+                <div class="row text-center">
+                    <div class="col-lg-12">
+                        <div class="icon__wrap">
+                            <div>
+                                <img src="assets/img/html.png" alt="html 아이콘">
+                            </div>
+                            <div>
+                                <img src="assets/img/css.png" alt="css 아이콘">
+                            </div>
+                            <div>
+                                <img src="assets/img/javascript.png" alt="js 아이콘">
+                            </div>
+                            <div>
+                                <img src="assets/img/jquery.png" alt="jquery 아이콘">
+                            </div>
+                            <div>
+                                <img src="assets/img/cafe24.png" alt="cafe24 아이콘">
+                            </div>
+                            <div>
+                                <img src="assets/img/photoshop.png" alt="photoshop 아이콘">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- About Section Button-->
-                <div class="text-center mt-4">
-                    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">
-                        <i class="fas fa-download mr-2"></i>
-                        다운로드
-                    </a>
+                
+                <div class="skill__wrap skill__wrap__01">
+                    <div>
+                        <span>HTML(5)</span>
+                        <span style="float:right;">90%</span>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="skill__wrap skill__wrap__02">
+                    <div>
+                        <span>CSS(3)</span>
+                        <span style="float:right;">90%</span>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="skill__wrap skill__wrap__03">
+                    <div>
+                        <span>Javascript(ES 5,6)</span>
+                        <span style="float:right;">60%</span>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="skill__wrap skill__wrap__04">
+                    <div>
+                        <span>jQuery</span>
+                        <span style="float:right;">80%</span>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="skill__wrap skill__wrap__05">
+                    <div>
+                        <span>CAFE 24</span>
+                        <span style="float:right;">90%</span>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="skill__wrap skill__wrap__06">
+                    <div>
+                        <span>Photoshop</span>
+                        <span style="float:right;">30%</span>
+                        <p></p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -168,41 +274,48 @@
                         <form id="contactForm" name="sentMessage" novalidate="novalidate">
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Name</label>
-                                    <input class="form-control" id="name" type="text" placeholder="Name" required="required" data-validation-required-message="Please enter your name." />
+                                    <label>이름</label>
+                                    <input class="form-control" id="name" type="text" placeholder="이름/회사명을 입력해주세요." required="required" data-validation-required-message="이름/회사명을 입력해주세요" />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Email Address</label>
-                                    <input class="form-control" id="email" type="email" placeholder="Email Address" required="required" data-validation-required-message="Please enter your email address." />
+                                    <label>이메일 주소</label>
+                                    <input class="form-control" id="email" type="email" placeholder="이메일 주소를 입력해주세요." required="required" data-validation-required-message="이메일 주소를 입력하셔야 합니다." />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Phone Number</label>
-                                    <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required="required" data-validation-required-message="Please enter your phone number." />
+                                    <label>휴대폰 번호</label>
+                                    <input class="form-control" id="phone" type="tel" placeholder="번호를 입력해주세요." required="required" data-validation-required-message="번호를 입력하셔야 합니다." />
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="control-group">
                                 <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                    <label>Message</label>
-                                    <textarea class="form-control" id="message" rows="5" placeholder="Message" required="required" data-validation-required-message="Please enter a message."></textarea>
+                                    <label>내용</label>
+                                    <textarea class="form-control" id="message" rows="5" placeholder="내용을 입력해주세요." required="required" data-validation-required-message="내용을 입력하셔야 합니다."></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <br />
                             <div id="success"></div>
-                            <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Send</button></div>
+                            <div class="form-group"><button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">보내기</button></div>
                         </form>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Footer-->
+        <section class="google_map google_map_title">
+            <h2>LOCATION</h2>
+        </section>
+        <section class="google_map google_map_content">
+            <div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3166.342031293284!2d126.87667301558659!3d37.47625433705049!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b61e4cca97827%3A0xd34916c9ae91c371!2z7ISc7Jq47Yq567OE7IucIOq4iOyynOq1rCDqsIDsgrDrj5kg7ISc67aA7IOb6ri4IDUyOA!5e0!3m2!1sko!2skr!4v1617866752468!5m2!1sko!2skr" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
         <!-- Copyright Section-->
         <div class="copyright py-4 text-center text-white">
             <div class="container"><small>Copyright © hyoin Website 2021</small></div>
@@ -224,20 +337,17 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">Log Cabin</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal1Label">대구광역시 신혼부부 전세자금대출</h2>
                                     <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cabin.png" alt="" />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/dgproject.jpg" alt="우리둥지대구 이미지" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
+                                    <p class="mb-5" style="font-weight:bold; font-size:1.5rem;">프로젝트 기간 : 2020.09.07 ~ 2020.09.21</p>
+                                    <p class="mb-5" style="font-weight:bold;">주요 스킬 : HTML(5) accessibility, CSS(3) animation</p>
+                                    <p class="mb-5" style="font-weight:bold;">형상관리 / framework : Eclipse, svn / 전자 정부 프레임워크 3.8</p>
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-plus"></i>
+                                        <a href="https://dungji.daegu.go.kr/" style="color:#fff;" target="_blank">&nbsp;&nbsp;PAGE LINK</a>
                                     </button>
                                 </div>
                             </div>
@@ -258,20 +368,18 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">Tasty Cake</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal2Label">계명대 창업지원단</h2>
                                     <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
+                                    
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cake.png" alt="" />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/KMU.jpg" alt="계명대학교 이미지" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
+                                    <p class="mb-5" style="font-weight:bold; font-size:1.5rem;">프로젝트 기간 : 2020.09.14 ~ 2020.09.18</p>
+                                    <p class="mb-5" style="font-weight:bold;">주요 스킬 : HTML(5) accessibility, CSS(3), Table Layout</p>
+                                    <p class="mb-5" style="font-weight:bold;">형상관리 / framework : Eclipse, svn / 전자 정부 프레임워크 3.8</p>
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-plus"></i>
+                                        <a href="http://www.kubic.co.kr/" style="color:#fff;" target="_blank">&nbsp;&nbsp;PAGE LINK</a>
                                     </button>
                                 </div>
                             </div>
@@ -292,20 +400,18 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">Circus Tent</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal3Label">한국감정원 빈집플랫폼</h2>
                                     <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
+                                    
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/circus.png" alt="" />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/korea-appraisal.jpg" alt="한국감정원 이미지" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
+                                    <p class="mb-5" style="font-weight:bold; font-size:1.5rem;">프로젝트 기간 : 2020.10.05 ~ 2020.10.09</p>
+                                    <p class="mb-5" style="font-weight:bold;">주요 스킬 : HTML(5) maping, CSS(3), jQuery</p>
+                                    <p class="mb-5" style="font-weight:bold;">형상관리 : Eclipse, svn</p>
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-plus"></i>
+                                        <a href="http://hyoin.site/koreaAppraisal/config/index.html" style="color:#fff;" target="_blank">&nbsp;&nbsp;PAGE LINK</a>
                                     </button>
                                 </div>
                             </div>
@@ -326,20 +432,18 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal4Label">Controller</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal4Label">대구광역시 블록체인 플랫폼</h2>
                                     <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
+                                    
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/game.png" alt="" />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/blockchain.jpg" alt="블록체인 이미지" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
+                                    <p class="mb-5" style="font-weight:bold; font-size:1.5rem;">프로젝트 기간 : 2020.11.16 ~ 2020.12.18</p>
+                                    <p class="mb-5" style="font-weight:bold;">주요 스킬 : HTML(5) table, CSS(3), javascript chart, graph control</p>
+                                    <p class="mb-5" style="font-weight:bold;">형상관리 / framework : Eclipse, svn / 전자 정부 프레임워크 3.8</p>
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-plus"></i>
+                                        <a href="https://did.daegu.go.kr/dgbp/portal/index.do" style="color:#fff;" target="_blank">&nbsp;&nbsp;PAGE LINK</a>
                                     </button>
                                 </div>
                             </div>
@@ -360,20 +464,18 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal5Label">Locked Safe</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal5Label">한국로봇산업진흥원</h2>
                                     <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
+                                   
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/safe.png" alt="" />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/kiria.jpg" alt="한국로봇산업진흥원 이미지" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
+                                    <p class="mb-5" style="font-weight:bold; font-size:1.5rem;">프로젝트 기간 : 2020.10.15 ~ 2020.10.29</p>
+                                    <p class="mb-5" style="font-weight:bold;">주요 스킬 : HTML(5) accessibility + table, CSS(3)</p>
+                                    <p class="mb-5" style="font-weight:bold;">형상관리 / framework : Eclipse, svn / 전자 정부 프레임워크 3.8</p>
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-plus"></i>
+                                        <a href="https://www.kiria.org/portal/main.do" style="color:#fff;" target="_blank">&nbsp;&nbsp;PAGE LINK</a>
                                     </button>
                                 </div>
                             </div>
@@ -394,20 +496,82 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-8">
                                     <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">Submarine</h2>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">메디시티대구</h2>
                                     <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
+                                   
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/submarine.png" alt="" />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/media.jpg" alt="메디시티대구 이미지" />
                                     <!-- Portfolio Modal - Text-->
-                                    <p class="mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia neque assumenda ipsam nihil, molestias magnam, recusandae quos quis inventore quisquam velit asperiores, vitae? Reprehenderit soluta, eos quod consequuntur itaque. Nam.</p>
-                                    <button class="btn btn-primary" data-dismiss="modal">
-                                        <i class="fas fa-times fa-fw"></i>
-                                        Close Window
+                                    <p class="mb-5" style="font-weight:bold; font-size:1.5rem;">프로젝트 기간 : 2020.12.14 ~ 2020.12.21</p>
+                                    <p class="mb-5" style="font-weight:bold;">주요 스킬 : HTML(5), CSS(3), spring, Java, Javascript</p>
+                                    <p class="mb-5" style="font-weight:bold;">형상관리 / framework : Eclipse, svn / Spring</p>
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-plus"></i>
+                                        <a href="https://www.medicitydaegu.com/portal/intro.do" style="color:#fff;" target="_blank">&nbsp;&nbsp;PAGE LINK</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 7-->
+        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-labelledby="portfolioModal7Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal6Label">동양미디어 옥토북스</h2>
+                                    <!-- Icon Divider-->
+                                   
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/octobooks.jpg" alt="옥토북스 이미지" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5" style="font-weight:bold; font-size:1.5rem;">프로젝트 기간 : 2021.01.10 ~ 2021.03.31</p>
+                                    <p class="mb-5" style="font-weight:bold;">주요 스킬 : HTML(5), CSS(3), Javascript location + scroll, jQuery slider + class</p>
+                                    <p class="mb-5" style="font-weight:bold;">형상관리 : CAFE24</p>
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-plus"></i>
+                                        <a href="https://octobooks.co.kr/" style="color:#fff;" target="_blank">&nbsp;&nbsp;PAGE LINK</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 8-->
+        <div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" role="dialog" aria-labelledby="portfolioModal8Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="fas fa-times"></i></span>
+                    </button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" id="portfolioModal8Label">B2B 도매사이트 캠투비</h2>
+                                    <!-- Icon Divider-->
+                                    
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/cam2be.jpg" alt="캠투비 이미지" />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5" style="font-weight:bold; font-size:1.5rem;">프로젝트 기간 : 2021.01.10 ~ 2021.02.26</p>
+                                    <p class="mb-5" style="font-weight:bold;">주요 스킬 : HTML(5), CSS(3), Javascript location + scroll, jQuery slider + class, PHP dataset</p>
+                                    <p class="mb-5" style="font-weight:bold;">형상관리 : 고도몰</p>
+                                    <button class="btn btn-primary">
+                                        <i class="fas fa-plus"></i>
+                                        <a href="http://www.campingb2b.com/" style="color:#fff;" target="_blank">&nbsp;&nbsp;PAGE LINK</a>
                                     </button>
                                 </div>
                             </div>

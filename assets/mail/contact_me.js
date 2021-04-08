@@ -39,7 +39,7 @@ $(function () {
                         )
                         .append("</button>");
                     $("#success > .alert-success").append(
-                        "<strong>Your message has been sent. </strong>"
+                        "<strong>메일이 성공적으로 전송되었습니다.</strong>"
                     );
                     $("#success > .alert-success").append("</div>");
                     //clear all fields
@@ -55,9 +55,9 @@ $(function () {
                         .append("</button>");
                     $("#success > .alert-danger").append(
                         $("<strong>").text(
-                            "Sorry " +
+                            "죄송합니다. " +
                                 firstName +
-                                ", it seems that my mail server is not responding. Please try again later!"
+                                ", 메일서버가 응답하고 있지 않습니다. 다시 시도해주세요."
                         )
                     );
                     $("#success > .alert-danger").append("</div>");
