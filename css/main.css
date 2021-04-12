@@ -1,7 +1,7 @@
 a.active, a.hover, a:visited, a:link{text-decoration: none;}
 .navBg {background-color:#344055 !important;}
 .mainBg {background-color:#A682FF !important;}
-
+header{overflow:hidden;}
 .portfolio .portfolio-item .portfolio-item-caption:hover{background-color:#A682FF !important;}
 
 .item__content{
@@ -140,7 +140,7 @@ a.active, a.hover, a:visited, a:link{text-decoration: none;}
     max-width:600px; 
     height:40px; 
     position:relative;
-    margin-top:3rem;
+    margin-top:7rem;
 }
 .skill__wrap p{
     position:relative;
@@ -225,8 +225,16 @@ a.active, a.hover, a:visited, a:link{text-decoration: none;}
 .content_box_me:nth-child(1)::after{
     content:""; position:absolute;
     width:2px; height:100%; right:0; top:0;
-    background:#2c3e50;
+    background:#000;
+    opacity:0.1;
 }   
+.fa-star-animation{animation:star 3s infinite;}
+@keyframes star{
+    0%{opacity:1;}
+    50%{opacity:0.5;}
+    100%{opacity:1;}
+}
+
 @keyframes skill90{
     0%{width: 0;}
     100%{width:90%;}
@@ -294,4 +302,178 @@ a.active, a.hover, a:visited, a:link{text-decoration: none;}
         display:inline-block;
         margin-top:1.5rem;
     }    
+    .cycle_wrap{
+        max-width:400px; width:100%;
+        animation:cycleWrap 10s ease-in-out infinite;
+        position:relative;
+    }
+    .cycle_wrap::before{
+        top:-210px !important;
+    }
+    @keyframes cycleWrap {
+        0% {left:-10%;}
+        100% {left:110%;}
+        }
+}
+
+/* animation */
+
+.cycleicon img {width:100%;}
+.ml6 .text-wrapper{
+    z-index:99;
+}
+.cycle_wrap{
+    max-width:1200px; width:100%;
+    animation:cycleWrap 20s ease-in-out;
+    animation-delay:5.5s;
+    position:relative;
+    opacity:0;
+}
+.cycle_wrap::before{
+    content:"2020.09 ~ 2021.04 그리고 그 후에도"; position:absolute; top:-180px; left:0; font-size:1rem;
+    
+}
+@keyframes cycleWrap {
+    0% {left:-50%; opacity:1;}
+    99%{opacity:1;}
+    100% {left:150%; opacity:0;}
+    }
+.cycleicon {
+position:absolute;
+top:50%;
+transform:translate(0,-50%);
+max-width:300px;
+width:100%;
+z-index:0;
+opacity:0.7;
+}
+.cycleicon .front-wheel {
+position:absolute;
+top:58.5%;
+right:1.5%;
+width:38%;
+z-index:-1;
+animation:front-wheel 2s linear infinite both;
+}
+.cycleicon .front-wheel {
+position:absolute;
+top:58.5%;
+right:1.5%;
+width:38%;
+z-index:-1;
+animation:front-wheel 1s linear infinite both;
+}
+.cycleicon .back-wheel {
+position:absolute;
+top:58.5%;
+left:1.5%;
+width:38%;
+z-index:-1;
+animation:front-wheel 1s linear infinite both;
+}
+.cycleicon .cycle-foot01-1 {
+position:absolute;
+top:28%;
+left:24%;
+width:34%;
+z-index:10;
+animation: foot01-1 .5s linear infinite alternate both;
+transform-origin:15% 50%;
+}
+.cycleicon .cycle-foot01-2 {
+position:absolute;
+top:64%;
+left:49%;
+width:50%;
+animation: foot01-2 1s linear infinite;
+transform-origin:80% 5%;
+}
+.cycleicon .cycle-foot02-1 {
+position:absolute;
+top:28%;
+left:24%;
+width:34%;
+z-index:-2;
+animation: foot02-1 .5s linear infinite alternate both;
+transform-origin:15% 50%;
+}
+.cycleicon .cycle-foot02-2 {
+position:absolute;
+top:64%;
+left:49%;
+width:50%;
+animation: foot02-2 1s linear infinite;
+transform-origin:80% 5%;
+}
+
+.cycleicon .cycle-crank1 {
+position:absolute;
+top:70.6%;
+left:40%;
+width:11%;
+z-index:2;
+animation: front-wheel 1s linear infinite both;
+transform-origin:50% 64.5%;
+}
+.cycleicon .cycle-crank1 .cycle-pedal {
+position:absolute;
+top:5%;
+left:25%;
+width:50%;
+animation: back-wheel 1s linear infinite both;
+}
+.cycleicon .cycle-crank2 {
+position:absolute;
+top:75.5%;
+left:40%;
+width:11%;
+z-index:-2;
+animation: front-wheel 1s linear infinite both;
+transform-origin:50% 35.5%;
+}
+.cycleicon .cycle-crank2 .cycle-pedal {
+position:absolute;
+bottom:5%;
+left:25%;
+width:50%;
+animation: back-wheel 1s linear infinite both;
+}
+
+
+@keyframes front-wheel {
+0% {transform: rotate(0);}
+100% {transform: rotate(360deg);}
+}
+
+@keyframes back-wheel {
+0% {transform: rotate(0);}
+100% {transform: rotate(-360deg);}
+}
+
+
+@keyframes foot01-1 {
+0% {transform:rotate(-5deg);}
+100% {transform:rotate(60deg);}
+}
+
+@keyframes foot01-2 {
+0% {transform:rotate(10deg);}
+10% {transform:rotate(-25deg);}
+25% {transform:rotate(-60deg);}
+50% {transform:rotate(-85deg);}
+80% {transform:rotate(2deg);}
+100% {transform:rotate(10deg);}
+}
+
+@keyframes foot02-1 {
+0% {transform:rotate(60deg);}
+100% {transform:rotate(-5deg);}
+}
+
+@keyframes foot02-2 {
+0% {transform:rotate(-85deg);}
+20% {transform:rotate(-18deg);}
+50% {transform:rotate(5deg);}
+75% {transform:rotate(-60deg);}
+100% {transform:rotate(-85deg);}
 }
