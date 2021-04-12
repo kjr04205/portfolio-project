@@ -1,15 +1,15 @@
 
 $(function(){
   $('.year_wrap_second').click(function(){
-      $('.portfolio_first_box').hide(500);
-      $('.portfolio_second_box').show(500);
+      $('.portfolio_first_box').hide();
+      $('.portfolio_second_box').show();
       $('.year_wrap_first').removeClass('cursorPointer');
       $('.year_wrap_second').addClass('cursorPointer');
   });
 
   $('.year_wrap_first').click(function(){
-    $('.portfolio_second_box').hide(500);
-    $('.portfolio_first_box').show(500);
+    $('.portfolio_second_box').hide();
+    $('.portfolio_first_box').show();
     $('.year_wrap_second').removeClass('cursorPointer');
     $('.year_wrap_first').addClass('cursorPointer');
 });
